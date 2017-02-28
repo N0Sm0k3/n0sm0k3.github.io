@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Posterwa Sans Light"; /* Гарнитура шрифта */
+    src: url(../res/fonts/PosterwaSans.otf); /* Путь к файлу со шрифтом */
+}
+body {
+    font-family: "Posterwa Sans Light", 'Comic Sans MS', "Posterwa Sans Light";
+}
