@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     var MIN_VID = 1;
-    var MAX_VID = 4;
+    var MAX_VID = 5;
 
     var count = localStorage.getItem('countVideo');
     if (count === null)
