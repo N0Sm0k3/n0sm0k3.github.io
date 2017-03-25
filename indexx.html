@@ -5,7 +5,26 @@
     <link rel="icon" type="image/ico" href="1.ico" sizes="45x48">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <script src="res/skel.min.js"></script>
-    <script src="res/init.js"></script>      
+    <script src="res/init.js"></script>
+    <script type="text/javascript" src="./res/particles.min.js"></script>
+    <script type="text/javascript" src="./res/app.js"></script>
+</div><canvas width="1280" height="640" style="width: 100%; height: 100%;"></canvas>
+<div id="test"></div>
+<script>
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+        }
+        return false;
+    };
+    function click() {
+        if (event.button == 2||event.button==3) {
+            oncontextmenu='return false';
+        }
+    }
+    document.onmousedown=click;
+    document.oncontextmenu = new Function("return false;")
+</script>
+   
     <script src="https://use.fontawesome.com/a5e30dd034.js"></script>
     <link rel="stylesheet" href="res/stol.css" >
     
@@ -28,10 +47,9 @@
       <div id="main">        
           <header id="header"> 
 		  <script>
-alert("Привет, Ты попал на мой сайт ");
-alert("Тут находиЦА АПАСНА");
-alert("ШАЛОМ НАХУЙ,ДА? ");
-alert("Ну ты посмотри");
+alert("Привет, спасибо за пощещение моего сайтеца , я думал он не нужен, ну кароче , располагайся, диван там. ");
+alert("Если не нравится трек , просто обнови страницу , и не парся!");
+alert("Удачного тебе дня! ");			  
 </script>
 <p >
 <h2>Текущее время</h2>
@@ -73,7 +91,7 @@ window.onload=show2
  </p>
 		  
             <h1 id="nickname">N<font color="#1E90FF">s</font>m<font color="#1E90FF">k</font> :3  <span style="color: whitesmoke;letter-spacing: 0;font-size: 23px;"> </span></h1>
-            <h2 id="welcome-title">Добро пожаловать, зайка <3</h2>					
+            <h2 id="welcome-title">Обнови страницу , тут музычка меняется)</h2>					
 						<nav>
 							<ul>	
                <li><a href="https://vk.com/ns_mk"  target="_blank" class="fa fa-vk"></a></li>	
