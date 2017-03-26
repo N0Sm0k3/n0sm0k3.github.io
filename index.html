@@ -44,14 +44,47 @@
       <div id="overlay"></div>
       <div id="main">        
           <header id="header"> 
-		  <script>
-alert("Привет, спасибо за пощещение моего сайтеца , я думал он не нужен, ну кароче , располагайся, диван там. ");
-alert("Если не нравится трек , просто обнови страницу , и не парся!");
-alert("Удачного тебе дня! ");			  
+<p>
+	</script>
+  <script type="text/javascript">
+    document.ondragstart = noselect; 
+    document.onselectstart = noselect;    
+    document.oncontextmenu = noselect; 
+    function noselect() {return false;} 
 </script>
-<p >
+<p>
 <h2>Текущее время</h2>
  <BODY> 
+ 
+<span id=tick2></span><!-- Поставить в нужное место -->
+<script>
+<!--
+function show2(){
+if (!document.all&&!document.getElementById)
+return
+thelement=document.getElementById? document.getElementById("tick2"): document.all.tick2
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var seconds=Digital.getSeconds()
+var dn="PM"
+if (hours<12)
+dn="AM"
+if (hours>12)
+hours=hours-12
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+var ctime=hours+":"+minutes+":"+seconds+" "+dn
+thelement.innerHTML="<b style='font-size:16;color:red;'>"+ctime+"</b>"
+setTimeout("show2()",1000)
+}
+window.onload=show2
+//-->
+</script> 
  
 
 <script src="http://megatimer.ru/s/dc9d79e424186dc861f91f61de677163.js"></script>
