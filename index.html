@@ -44,15 +44,16 @@
       <div id="overlay"></div>
       <div id="main">        
           <header id="header"> 
-<p>
-	</script>
-  <script type="text/javascript">
+ <script type="text/javascript">
     document.ondragstart = noselect; 
-    document.onselectstart = noselect;    
+    // запрет на перетаскивание 
+    document.onselectstart = noselect; 
+    // запрет на выделение элементов страницы 
     document.oncontextmenu = noselect; 
+    // запрет на выведение контекстного меню 
     function noselect() {return false;} 
 </script>
-<p>
+<p >
 <h2>Текущее время</h2>
  <BODY> 
  
@@ -82,8 +83,9 @@ thelement.innerHTML="<b style='font-size:16;color:red;'>"+ctime+"</b>"
 setTimeout("show2()",1000)
 }
 window.onload=show2
-//-->
 </script> 
+ </BODY>
+ </p>
  
 	 <script type="text/javascript" async="" src="./res/ga.js">
 		    <script type="text/javascript" src="./res/particles.min.js"></script>
