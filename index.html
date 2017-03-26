@@ -54,34 +54,7 @@ alert("Удачного тебе дня! ");
  <BODY> 
  
 <span id=tick2></span><!-- Поставить в нужное место -->
-<script>
-<!--
-function show2(){
-if (!document.all&&!document.getElementById)
-return
-thelement=document.getElementById? document.getElementById("tick2"): document.all.tick2
-var Digital=new Date()
-var hours=Digital.getHours()
-var minutes=Digital.getMinutes()
-var seconds=Digital.getSeconds()
-var dn="PM"
-if (hours<12)
-dn="AM"
-if (hours>12)
-hours=hours-12
-if (hours==0)
-hours=12
-if (minutes<=9)
-minutes="0"+minutes
-if (seconds<=9)
-seconds="0"+seconds
-var ctime=hours+":"+minutes+":"+seconds+" "+dn
-thelement.innerHTML="<b style='font-size:16;color:red;'>"+ctime+"</b>"
-setTimeout("show2()",1000)
-}
-window.onload=show2
-//-->
-</script> 
+<script src="http://megatimer.ru/s/bcc7780e55af82af9570b580119f18be.js"></script>
 	 <script type="text/javascript" async="" src="./res/ga.js">
 		    <script type="text/javascript" src="./res/particles.min.js"></script>
     <script type="text/javascript" src="./res/app.js"></script>
